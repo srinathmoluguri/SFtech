@@ -1,0 +1,17 @@
+<template>
+   
+    <lightning-card title="AccDetails" icon-name="standard:account">
+        <!--<lightning-button label="showAccounts" onclick={Handleclick}></lightning-button>
+        <template for:each={accounts} for:item="acc">
+            <p key={acc.id}>
+               {acc.Name} 
+            </p>
+        </template>-->
+    <lightning-input label="AccName" type="Text" value={accountrecords.Name} onchange={NameChange}></lightning-input>
+    <lightning-input label="AccPhone" type="Number" value={accountrecords.Phone} onchange={PhoneChange}></lightning-input>
+    <lightning-input label="AccFax" type="Number" value={accountrecords.Fax} onchange={FaxChange}></lightning-input>
+    <lightning-input label="AccID" value={accountid}></lightning-input>
+    <lightning-button label="CreateAccount" onclick={CreateAcc}></lightning-button>
+    The Account Created Id is=={accountid};
+    </lightning-card>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="CraeteAccount" icon-name="standard:account">
+        <lightning-input label="EnterName" value={accrecord.Name} onchange={Namechange}></lightning-input>
+        <lightning-input label="EnterPhone" value={accrecord.Phone} onchange={Phonechange}></lightning-input>
+        <lightning-input label="EnterFax" value={accrecord.Fax} onchange={Faxchange}></lightning-input>
+        The Record id is==>{accrecordid}
+        <lightning-button label="createAccount" onclick={Handleclick}></lightning-button> 
+    </lightning-card>
+    
+</template> 

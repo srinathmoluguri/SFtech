@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Accountdetails" icon-name="standard:account">
+        <lightning-button label="showAcc" onclick={handleclick}></lightning-button>
+        <lightning-datatable 
+                   key-field="id"
+                   columns={columns}
+                   data={accdata}></lightning-datatable>
+        
+    </lightning-card> 
+</template>

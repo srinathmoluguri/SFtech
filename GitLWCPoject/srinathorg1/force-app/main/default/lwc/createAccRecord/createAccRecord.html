@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Account Details" icon-name="standard:accont">
+    <lightning-input label="Enter Name" value={accrecords.Name} onchange={HandleName}></lightning-input>
+    <lightning-input label="Enter Phone" value={accrecords.Phone} onchange={HandlePhone}></lightning-input>
+    <lightning-input label="Enter Fax" value={accrecords.Fax} onchange={HandleFax}></lightning-input>
+    <lightning-input label="Enter Industry" value={accrecords.Industry} onchange={HandleIndustry}></lightning-input>
+    The Account id Of Account is =={accrecordid}<br/>
+    <lightning-button label="SaveRecord" onclick={HandleSave}></lightning-button>
+</lightning-card>
+</template>

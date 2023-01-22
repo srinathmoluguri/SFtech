@@ -1,0 +1,18 @@
+<template>
+    This is my first new lwc component
+    <p></p>
+    <!--<template for:each={Programming} for:item="prg">
+        <lightning-card key={prg.id}>
+            <p>{prg.lan}</p>
+            
+        </lightning-card>-->
+        <button  onclick={HandleClick}>clickhere</button>
+        
+        <template if:true={showtext}>
+             This is click on button
+        </template>
+         <lightning-button label="Geter" value={title} onclick={gettitle}></lightning-button>
+         {gettitle}
+    
+   
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Show Contacts" icon-name="standard:account">
+        <lightning-combobox
+                        label="AccountDetails"
+                        value={value}
+                        options={opt}
+                        onchange={HandleChange}></lightning-combobox>
+    <lightning-button label={ShowContacts} onclick={HandleClick}></lightning-button>
+    <template if:true={ShowContacts}>
+        <lightning-datatable
+                      key-field="id"
+                      columns={columns}
+                      data={contactrec}></lightning-datatable>
+    </template>
+    <template if:false={ShowContacts}>
+
+    </template>
+    </lightning-card>
+</template>

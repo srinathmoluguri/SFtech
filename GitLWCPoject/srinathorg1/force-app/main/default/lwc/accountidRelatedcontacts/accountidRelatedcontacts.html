@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Contact Details" icon-name="standard:account">
+    <lightning-button label="Display Contacts" onclick={contactsDisplay}></lightning-button>
+    <lightning-datatable
+    key-field="id"
+    columns={columns}
+    data={accrecords}
+    hide-checkbox-column=true></lightning-datatable>
+</lightning-card>
+</template>

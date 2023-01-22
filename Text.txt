@@ -1,8 +1,0 @@
-A
-B
-D
-E
-F
-Hello please
-Hi i have changed the page
-Hi i am in git Notepad
